@@ -1,2 +1,30 @@
 ---
+import { cloudCertificates } from "../data/CloudCertifications";
+
+const convertImgPath = (filename: string) => {
+  const prefix = '/badges/';
+  return prefix + filename
+}
 ---
+<section>
+  <h1>Certification</h1>
+  <div>
+    <h2>Cloud</h2>
+    <ul>
+      {
+        cloudCertificates.map(({ name, image, cloud, activeDate}) => (
+          <li>
+            <img
+              src={convertImgPath(image)}
+              alt={name}
+              width="150"
+              height="150"
+            />
+            <p>{name}</p>
+            <p>{activeDate}</p>
+          </li>
+        ))
+      }
+  </div>
+  </ul>
+</section>

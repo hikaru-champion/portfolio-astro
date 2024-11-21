@@ -1,6 +1,6 @@
 ---
 import Icon from "./Icon.astro";
-import type { iconPaths } from "./IconPaths";
+import type { iconPaths } from "../data/IconPaths";
 
 const navLinks: { label: string; href: string }[] = [
   { label: "Home", href: "/" },
@@ -11,6 +11,8 @@ const navLinks: { label: string; href: string }[] = [
 const IconLinks: { label: string; href: string, icon: keyof typeof iconPaths }[] = [
   { label: "Twitter", href: "https://x.com", icon: "x-logo"  },
   { label: "GitHub", href: "https://github.com/hikaru-champion", icon: "github-logo" },
+  { label: "Zenn", href: "https://zenn.dev/hi_ka_ru", icon: "zenn-logo" },
+  { label: "speakerdeck", href: "https://speakerdeck.com/hikaruchampion/", icon: "github-logo" },
 ]
 
 ---
@@ -28,7 +30,7 @@ const IconLinks: { label: string; href: string, icon: keyof typeof iconPaths }[]
       }
     </ul>
   </div>
-  <div class="flex justify-between gap-3 p-6 bg-gray-900 rounded-bl-md rounded-br-md shadow-lg">
+  <div>
     <div>
       <ul>
         {
