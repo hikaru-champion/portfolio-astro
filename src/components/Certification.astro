@@ -7,21 +7,21 @@ const convertImgPath = (filename: string) => {
 }
 ---
 <section>
-  <h1>Certification</h1>
+  <h1 class="text-3xl text-center bg-gradient-to-l from-green-400 to-cyan-500 text-white rounded-full px-8 py-4">Cloud Certification</h1>
   <div>
-    <h2>Cloud</h2>
-    <ul>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       {
         cloudCertificates.map(({ name, image, cloud, activeDate}) => (
-          <li>
+          <li class="bg-white rounded-lg shadow-md p-6">
             <img
+              class="mx-auto"
               src={convertImgPath(image)}
               alt={name}
               width="150"
               height="150"
             />
-            <p>{name}</p>
-            <p>{activeDate}</p>
+            <p class="text-center pt-5">{name}</p>
+            <p class="text-center">{activeDate}</p>
           </li>
         ))
       }
