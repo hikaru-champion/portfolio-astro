@@ -1,2 +1,95 @@
 ---
+import { techSkills } from "../data/TechSkills";
+
+const cloudSkills = techSkills.filter(techSkill => techSkill.type === 'cloud');
+const langSkills = techSkills.filter(techSkill => techSkill.type === 'language');
+const infraSkills = techSkills.filter(techSkill => techSkill.type === 'infra');
+const toolSkills = techSkills.filter(techSkill => techSkill.type === 'tool');
+
+const convertImgPath = (filename: string) => {
+  const prefix = '/tech-logo/';
+  return prefix + filename
+};
 ---
+<section class="bg-gray-100 py-4">
+  <div>
+    <h2 class="text-2xl text-center bg-gradient-to-l description text-black rounded-full px-8 py-4">Cloud Provider</h2>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      {
+        cloudSkills.map(({ name, image, description}) => (
+          <li class="bg-white rounded-lg shadow-md p-6">
+            <img
+              class="mx-auto"
+              src={convertImgPath(image)}
+              alt={name}
+              width="150"
+              height="150"
+            />
+            <p class="text-center pt-5 font-bold">{name}</p>
+            <p class="text-center">{description}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+  <div>
+    <h2 class="text-2xl text-center bg-gradient-to-l description text-black rounded-full px-8 py-4">Language</h2>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      {
+        langSkills.map(({ name, image, description}) => (
+          <li class="bg-white rounded-lg shadow-md p-6">
+            <img
+              class="mx-auto"
+              src={convertImgPath(image)}
+              alt={name}
+              width="150"
+              height="150"
+            />
+            <p class="text-center pt-5 font-bold">{name}</p>
+            <p class="text-center">{description}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+  <div>
+    <h2 class="text-2xl text-center bg-gradient-to-l description text-black rounded-full px-8 py-4">Infra</h2>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      {
+        infraSkills.map(({ name, image, description}) => (
+          <li class="bg-white rounded-lg shadow-md p-6">
+            <img
+              class="mx-auto"
+              src={convertImgPath(image)}
+              alt={name}
+              width="150"
+              height="150"
+            />
+            <p class="text-center pt-5 font-bold">{name}</p>
+            <p class="text-center">{description}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+  <div>
+    <h2 class="text-2xl text-center bg-gradient-to-l description text-black rounded-full px-8 py-4">Tool</h2>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      {
+        toolSkills.map(({ name, image, description}) => (
+          <li class="bg-white rounded-lg shadow-md p-6">
+            <img
+              class="mx-auto"
+              src={convertImgPath(image)}
+              alt={name}
+              width="150"
+              height="150"
+            />
+            <p class="text-center pt-5 font-bold">{name}</p>
+            <p class="text-center">{description}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>

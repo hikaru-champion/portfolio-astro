@@ -1,49 +1,16 @@
 ---
-import Icon from "./Icon.astro";
-import type { iconPaths } from "../data/IconPaths";
-
-const navLinks: { label: string; href: string }[] = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "/about/" },
-  { label: "Skills", href: "/skills/" },
-]
-
-const IconLinks: { label: string; href: string, icon: keyof typeof iconPaths }[] = [
-  { label: "Twitter", href: "https://x.com", icon: "x-logo"  },
-  { label: "GitHub", href: "https://github.com/hikaru-champion", icon: "github-logo" },
-  { label: "Zenn", href: "https://zenn.dev/hi_ka_ru", icon: "zenn-logo" },
-  { label: "speakerdeck", href: "https://speakerdeck.com/hikaruchampion/", icon: "speakerdeck-logo" },
-]
-
+import { navLinks } from "../data/NavLists";
 ---
-<nav class="z-auto font-medium font-sans">
-  <div class="container mx-auto flex justify-center">  
-    <ul class="flex bg-gray-200 border-gray-400">
-      {
-        navLinks.map(({ label, href }) => (
-          <li class="mr-4">
-            <a href={href}>
-              {label}
-            </a>
-          </li>
-        ))
-      }
-    </ul>
-  </div>
-  <div>
-    <div>
-      <ul>
-        {
-          IconLinks.map(({ label, href, icon }) => (
-            <li>
-              <a href={href}>
-                <span class="flex p-1 md:hidden">{label}</span>
-                <Icon icon={icon} />
-              </a>
-            </li>
-          ))
-        }
-      </ul>
-    </div>
-  </div>  
+<nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+  <ul class="flex">
+    {
+      navLinks.map(({ label, href }) => (
+        <li class="mr-5 hover:text-gray-900 text-xl">
+          <a href={href}>
+            {label}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
 </nav>
