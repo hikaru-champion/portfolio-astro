@@ -1,16 +1,18 @@
 ---
+import Container from "./Container.astro";
 import Icon from "./Icon.astro";
 import Nav from "./Nav.astro";
-
 ---
-<header class="text-gray-600 body-font">
-  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-      <span class="ml-3 text-xl">Champion</span>
-    </a>
-    <Nav />
-    <div>
-      <Icon />
+<Container>
+  <header class="flex flex-col lg:flex-row justify-between items-center my-5">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a href="/" class="text-lg">
+        <span class="font-bold text-slate-800">Cham</span><span class="text-slate-500">pion</span>
+      </a>
+      <Nav />
+      <div>
+        <Icon />
+      </div>
     </div>
-  </div>
-</header>
+  </header>
+</Container>
