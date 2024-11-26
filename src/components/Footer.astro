@@ -1,13 +1,15 @@
 ---
+import Container from "./Container.astro";
 const currentYear = new Date().getFullYear();
 ---
-
-<footer class="mx-20 my-10">
-  <div class="text-center text-sm text-slate-500">
-    <p>&copy; {currentYear} Hikaru Watanabe All Rights Reserved.</p>
-  </div>
-  <p class="text-center text-xs text-slate-500 mt-1">
-    <a class="text-base text-gray-600 underline decoration-transparent decoration-2 underline-offset-4 transition-colors duration-300 ease-in-out hover:decoration-current focus:decoration-current mx-2" href="https://x.com">X</a>
-    <a class="text-base text-gray-600 underline decoration-transparent decoration-2 underline-offset-4 transition-colors duration-300 ease-in-out hover:decoration-current focus:decoration-current mx-2" href="https://github.com/hikaru-champion">GitHub</a>
-  </p>
-</footer>
+<Container>
+  <footer class="mx-20 my-10">
+    <div class="text-center text-sm text-slate-500">
+      <p>&copy; {currentYear} Hikaru Watanabe All Rights Reserved.</p>
+    </div>
+    <p class="text-center text-xs text-slate-500 mt-1">
+      <a class="text-base text-gray-600 underline decoration-transparent decoration-2 underline-offset-4 transition-colors duration-300 ease-in-out hover:decoration-current focus:decoration-current mx-2" href="https://x.com">X</a>
+      <a class="text-base text-gray-600 underline decoration-transparent decoration-2 underline-offset-4 transition-colors duration-300 ease-in-out hover:decoration-current focus:decoration-current mx-2" href="https://github.com/hikaru-champion">GitHub</a>
+    </p>
+  </footer>
+</Container>
