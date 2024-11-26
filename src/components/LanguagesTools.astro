@@ -11,13 +11,13 @@ const convertImgPath = (filename: string) => {
   return prefix + filename
 };
 ---
-<section class="bg-gray-100 py-4 mt-10 px-3">
+<section class="py-4 mt-10 px-3">
   <div>
     <h3 class="font-bold text-3xl text-center bg-gradient-to-l description text-gray-800 rounded-full px-8 py-4">Cloud Provider</h3>
     <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       {
         cloudSkills.map(({ name, image, description}) => (
-          <li class="bg-white rounded-lg shadow-md p-6">
+          <li class="bg-gray-100 rounded-lg shadow-md p-6">
             <img
               class="mx-auto"
               src={convertImgPath(image)}
@@ -37,7 +37,7 @@ const convertImgPath = (filename: string) => {
     <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       {
         langSkills.map(({ name, image, description}) => (
-          <li class="bg-white rounded-lg shadow-md p-6">
+          <li class="bg-gray-100 rounded-lg shadow-md p-6">
             <img
               class="mx-auto"
               src={convertImgPath(image)}
@@ -57,7 +57,7 @@ const convertImgPath = (filename: string) => {
     <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       {
         infraSkills.map(({ name, image, description}) => (
-          <li class="bg-white rounded-lg shadow-md p-6">
+          <li class="bg-gray-100 rounded-lg shadow-md p-6">
             <img
               class="mx-auto"
               src={convertImgPath(image)}
@@ -77,7 +77,7 @@ const convertImgPath = (filename: string) => {
     <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       {
         toolSkills.map(({ name, image, description}) => (
-          <li class="bg-white rounded-lg shadow-md p-6">
+          <li class="bg-gray-100 rounded-lg shadow-md p-6">
             <img
               class="mx-auto"
               src={convertImgPath(image)}
