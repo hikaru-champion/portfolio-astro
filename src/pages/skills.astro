@@ -1,12 +1,20 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Container from '../components/Container.astro';
 import LanguagesTools from '../components/LanguagesTools.astro';
 import Certification from '../components/Certification.astro';
+import Sectionhead from '../components/Sectionhead.astro';
 ---
 <BaseLayout>
-
-  <h1 class="text-7xl text-center bg-gradient-to-l description text-black rounded-full px-8 py-4">My Skill</h1>
-  <LanguagesTools />
-  <Certification />
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">My Skill</Fragment>
+      <Fragment slot="desc">
+        My IT Skills and Certification
+      </Fragment>
+    </Sectionhead>
+    <LanguagesTools />
+    <Certification />
+  </Container>
 </BaseLayout>
 

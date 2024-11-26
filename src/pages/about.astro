@@ -1,22 +1,63 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Container from '../components/Container.astro';
+import Sectionhead from '../components/Sectionhead.astro';
 ---
 <BaseLayout>
-  <div>
-    <h1>Hello! I'm <span>Hikaru Watanabe</span></h1>
-    <p>
-      はじめまして。とある事業会社で、クラウドエンジニアとして働いています。
-      以前はAWSを中心に利用していましたが、最近はGoogle Cloud環境のCCoEとして、以下の活動を行っています。
-    </p>
-    <ul>
-      <li>コスト最適化</li>
-      <li>ガイドライン作成及び改定</li>
-      <li>Google Cloudプロジェクトの払い出し</li>
-      <li>アーキテクチャ、技術相談</li>
-      <li>AWSとGoogle Cloud間のデータ連携</li>
-      <li>Cloud Armorを利用したECサイトへのDDoS対策</li>
-      <li>権限管理</li>
-    </ul>
-  </div>
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">About Me</Fragment>
+      <Fragment slot="desc">
+        私の今までの経歴とできること
+      </Fragment>
+    </Sectionhead>
+
+    <div>
+      <section class="mt-5">
+        <h2 class="font-bold text-3xl text-gray-800">Background</h2>
+        <p class="mt-5 text-lg leading-relaxed text-slate-900">
+         初めまして。Championと申します。私は現在とある事業会社でクラウドエンジニアとして働いています。<br/>
+         前職では、独立系ITコンサルタント会社でインフラ・クラウドエンジニアとしてアパレル業界のお客様を中心にご支援させていただきました。<br/>
+         現職では、クラウドエンジニアとしてGoogle Cloudのガイドライン・ガバナンス整備を中心に、技術支援やコスト最適化活動に従事しています。<br/>
+         AWSやGoogle Cloudなどのパブリッククラウドの設計から運用保守まで一気通貫で担うことができます。<br/>
+         現職で担当している領域は以下になります。
+        </p>
+        <ul class="text-lg leading-relaxed text-slate-900 space-y-1 list-disc list-inside">
+          <li>コスト最適化</li>
+          <li>ガイドライン作成及び改定</li>
+          <li>Google Cloudプロジェクトの払い出し</li>
+          <li>アーキテクチャ、技術相談</li>
+          <li>AWSとGoogle Cloud間のデータ連携</li>
+          <li>Cloud Armorを利用したECサイトへのDDoS対策</li>
+          <li>権限管理</li>
+        </ul>
+      </section>
+      <section class="mt-5">
+        <h2 class="font-bold text-3xl text-gray-800">自己PR</h2>
+        <h3 class="mt-3 font-bold text-xl text-gray-800">設計ドキュメントやナレッジ・Tipsを残す力</h3>
+        <p class="mt-2 text-lg leading-relaxed text-slate-900">
+          以前担当していたプロジェクトでは、設計ドキュメントが不足しており、「どのような背景」、「どのような課題」があ
+          ってこういう設計にしたといったことが記載されいているドキュメントがなかったため、設計ドキュメントをちゃん
+          と記載して残すようにしました。<br/>また、アプリチームがサーバに入った際に迅速に作業できるよう「やりたいことに
+          対応するLinuxコマンド集」や「そもそもサーバとは？」などの勉強会を開催してナレッジを共有しました。<br/>その結果、
+          プロジェクトで設計ドキュメントを残す習慣を根付かせることや、アプリチームでもサーバ内でコマンドコピーで作
+          業ができるようになり作業を効率化することができました。
+        </p>
+        <h3 class="mt-3 font-bold text-xl text-gray-800">アウトプット力</h3>
+        <p class="mt-2 text-lg leading-relaxed text-slate-900">
+          技術ブログの執筆や外部イベントへの登壇などアウトプットする力があり、会社のブランディングにも寄与しました。<br/>
+          各プロジェクトでも初めて学んだ技術やプロジェクトを進めるうえで基本となる技術やインフラ構成などはプロジェ
+          クトのメンバーにドキュメントとしてアウトプットし、プロジェクトを円滑に進めるように努めました。
+        </p>
+        <h3 class="mt-3 font-bold text-xl text-gray-800">運用・保守までを考慮したインフラ設計ができる</h3>
+        <p class="mt-2 text-lg leading-relaxed text-slate-900">
+          システムは作って終わりではなく、稼働してからが本番であることからシステム稼働後の運用までを考慮した自動化
+          スクリプトの作成や、保守チームへの引継ぎ資料を設計時から準備しておくなどをして迅速に保守チームへ引き渡す
+          ことができました。<br/>また、各インシデントアラートに対してどう行動すればよいかのRunbookを整備することを意識し
+          ました。その結果、引継ぎ時のトラブルや問い合わせを減らせることができました。 
+        </p>
+      </section>
+    </div>
+  </Container>
 </BaseLayout>
 
