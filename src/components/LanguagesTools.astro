@@ -19,11 +19,9 @@ const convertImgPath = (filename: string) => {
         cloudSkills.map(({ name, image, description}) => (
           <li class="bg-gray-100 rounded-lg shadow-md p-6">
             <img
-              class="mx-auto"
+              class="mx-auto object-contain h-48 w-48"
               src={convertImgPath(image)}
               alt={name}
-              width="150"
-              height="150"
             />
             <p class="text-center pt-5 font-bold">{name}</p>
             <p class="text-center">{description}</p>
@@ -39,11 +37,9 @@ const convertImgPath = (filename: string) => {
         langSkills.map(({ name, image, description}) => (
           <li class="bg-gray-100 rounded-lg shadow-md p-6">
             <img
-              class="mx-auto"
+              class="mx-auto object-contain h-48 w-48"
               src={convertImgPath(image)}
               alt={name}
-              width="150"
-              height="150"
             />
             <p class="text-center pt-5 font-bold">{name}</p>
             <p class="text-center">{description}</p>
@@ -59,11 +55,9 @@ const convertImgPath = (filename: string) => {
         infraSkills.map(({ name, image, description}) => (
           <li class="bg-gray-100 rounded-lg shadow-md p-6">
             <img
-              class="mx-auto"
+              class="mx-auto object-contain h-48 w-48"
               src={convertImgPath(image)}
               alt={name}
-              width="150"
-              height="150"
             />
             <p class="text-center pt-5 font-bold">{name}</p>
             <p class="text-center">{description}</p>
@@ -79,11 +73,9 @@ const convertImgPath = (filename: string) => {
         toolSkills.map(({ name, image, description}) => (
           <li class="bg-gray-100 rounded-lg shadow-md p-6">
             <img
-              class="mx-auto"
+              class="mx-auto object-contain h-48 w-48"
               src={convertImgPath(image)}
               alt={name}
-              width="150"
-              height="150"
             />
             <p class="text-center pt-5 font-bold">{name}</p>
             <p class="text-center">{description}</p>

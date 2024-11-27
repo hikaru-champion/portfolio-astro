@@ -14,11 +14,9 @@ const convertImgPath = (filename: string) => {
         cloudCertificates.map(({ name, image, cloud, activeDate}) => (
           <li class="bg-gray-100 rounded-lg shadow-md p-6">
             <img
-              class="mx-auto"
+              class="mx-auto object-contain h-48 w-48"
               src={convertImgPath(image)}
               alt={name}
-              width="150"
-              height="150"
             />
             <p class="text-center pt-5">{name}</p>
             <p class="text-center">{activeDate}</p>
