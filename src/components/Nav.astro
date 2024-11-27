@@ -1,13 +1,13 @@
 ---
 import { navLinks } from "../data/NavLists";
 ---
-<nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-  <ul class="flex flex-col lg:flex-row lg:gap-3">
+<div class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+  <ul class="flex flex-col md:flex-row lg:gap-3">
     {
       navLinks.map(({ label, href }) => (
         <li>
           <a
-            class="flex lg:px-3 py-2 items-center text-gray-600 hover:text-gray-900" 
+            class="flex md:px-3 py-2 items-center text-gray-600 hover:text-gray-900" 
             href={href}>
             {label}
           </a>
@@ -15,4 +15,4 @@ import { navLinks } from "../data/NavLists";
       ))
     }
   </ul>
-</nav>
+</div>

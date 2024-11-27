@@ -1,27 +1,61 @@
 ---
 ---
 <main>
-  <div class="flex flex-col items-center gap-8 md:grid md:grid-cols-[6fr_4fr] md:px-10 md:gap-12">
-    <div class="">
-      <h1 class="text-3xl text-gray-800 max-w-3xl mx-auto font-bold md:text-6xl">Hello! I'm <span>Hikaru Watanabe</span></h1>
+  <div class="flex flex-col items-center gap-8 md:grid md:grid-cols-[6fr_4fr] md:gap-12">
+    <div>
+      <h1 class="text-3xl text-gray-800 max-w-3xl mx-auto font-bold md:text-6xl">Hello! I'm <span>Champion</span></h1>
       <p class="my-8 text-gray-800 max-w-3xl mx-auto">
-        はじめまして。とある事業会社で、クラウドエンジニアとして働いています。<br />
-        以前はAWSを中心に利用していましたが、最近はGoogle Cloud環境のCCoEとして、活動しています。
+        はじめまして、Championと申します。<br />
+        とある事業会社で、クラウドエンジニアとして働いています。<br />
+        AWSの経験もありますが、現在はGoogle Cloud環境のCCoEとして日々活動しています。<br />
+        定型作業の自動化や、Terraform等のIaCを利用したクラウドインフラ構築、技術支援を強みにしています。
       </p>
       <div class="hidden md:flex md:gap-2">
-        <div class="flex items-center justify-center px-4 py-2 gap-2 text-accent-text-over border border-accent-regular bg-accent-regular rounded-full text-md leading-relaxed">Cloud Enginner</div>
-        <div class="flex items-center justify-center px-4 py-2 gap-2 text-accent-text-over border border-accent-regular bg-accent-regular rounded-full text-md leading-relaxed">Google Cloud</div>
-        <div class="flex items-center justify-center px-4 py-2 gap-2 text-accent-text-over border border-accent-regular bg-accent-regular rounded-full text-md leading-relaxed">AWS</div>
+        <div class="flex items-center justify-center bg-green-500 text-white px-4 py-2 gap-2 text-accent-text-over border border-accent-regular bg-accent-regular rounded-full text-md leading-relaxed">Cloud Enginner</div>
+        <div class="flex items-center justify-center bg-green-500 text-white px-4 py-2 gap-2 text-accent-text-over border border-accent-regular bg-accent-regular rounded-full text-md leading-relaxed">Google Cloud</div>
+        <div class="flex items-center justify-center bg-green-500 text-white px-4 py-2 gap-2 text-accent-text-over border border-accent-regular bg-accent-regular rounded-full text-md leading-relaxed">AWS</div>
       </div>
     </div>
     <img
        class="aspect-w-5 aspect-h-4 object-cover object-top rounded-xl shadow-md"
        src="/picture/portrait.jpeg"
-       alt="Hikaru Watanabe is smiling and chuckling."
+       alt="Champion is smiling and chuckling."
        width="480"
        height="620">
   </div>
 </main>
-<section>
-  <div></div>
+<section class="mt-20">
+  <div class="pt-20">
+    <h2 class="text-xl text-gray-800 max-w-3xl font-bold md:text-6xl">Profile</h2>
+    <ul class="my-8 text-gray-800 max-w-3xl">
+      <li>名前 : Champion（あだ名です）</li>
+      <li>年齢 : 29歳</li>
+      <li>住まい : 埼玉県在住</li>
+      <li>趣味 : 筋トレ / テニス / 散歩 / ドライブ / IT技術の勉強</li>
+      <li></li>
+    </ul>
+  </div>
+  <a href="/about/">
+    <span class="bg-green-500 text-white px-4 py-2 gap-2 text-accent-text-over border border-accent-regular bg-accent-regular rounded-full text-md leading-relaxed">About me</span>  
+  </a>
+
+</section>
+<section class="mt-20">
+  <div>
+    <h2 class="text-xl text-gray-800 max-w-3xl font-bold md:text-6xl">Biography</h2>
+    <div class="my-8 flex flex-col">
+      <div class="p-5 my-3 flex bg-blue-950 border rounded-xl">
+        <p class="text-white text-lg">2019/3</p>
+        <p class="text-white text-lg ml-5">大学院 電気電子情報工学専攻 卒業</p>
+      </div>
+      <div class="p-5 my-3 flex bg-blue-950 border rounded-xl">
+        <p class="text-white text-lg">2019/4</p>
+        <p class="text-white text-lg ml-5">ITコンサルティング企業に入社。アパレル業界のお客様を中心にAWS、Google Cloudを用いたクラウドインフラの設計～運用・保守までを担当。</p>
+      </div>
+      <div class="p-5 my-3 flex bg-blue-950 border rounded-xl">
+        <p class="text-white text-lg">2023/9</p>
+        <p class="text-white text-lg ml-5">事業会社に入社。Google CloudのCCoEとしてコスト最適化・ガイドラインの作成、技術支援を担当。</p>
+      </div>
+    </div>
+  </div>
 </section>
