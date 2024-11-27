@@ -1,9 +1,9 @@
-export type biographyItem = {
+export type BiographyItem = {
   date: string,
   content: string
 }
 
-export const biographyList:biographyItem[] = [
+export const biographyList: BiographyItem[] = [
   {
     date: '2019/3',
     content: '大学院 電気電子情報工学専攻 卒業'

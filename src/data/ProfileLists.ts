@@ -1,9 +1,9 @@
-export type profileItem = {
+export type ProfileItem = {
   category: string,
   item: string
 }
 
-export const profileList:profileItem[] = [
+export const profileList: ProfileItem[] = [
   {
     category: '名前',
     item: 'Champion'
