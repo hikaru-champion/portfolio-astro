@@ -1,0 +1,18 @@
+---
+import { biographyList } from "../data/BiographyLists";
+---
+<section class="mt-20">
+  <div class="pt-20">
+    <h2 class="text-xl text-gray-800 max-w-3xl font-bold md:text-6xl">Biography</h2>
+    <div class="text-lg my-8 flex flex-col">
+      {
+        biographyList.map(({date, content}) => (
+          <div class="p-5 my-3 flex bg-blue-950 border rounded-xl">
+            <p class="text-white text-lg">{date}</p>
+            <p class="text-white text-lg ml-5">{content}</p>
+          </div>
+        ))
+      }
+
+  </div>
+</section>
