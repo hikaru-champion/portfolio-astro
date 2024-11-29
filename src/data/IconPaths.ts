@@ -12,12 +12,12 @@ export const snsIcons: SnsIconItem[] = [
   },
   {
     name: 'x',
-    href: 'https://x.com',
+    href: 'https://x.com/champion206770/',
     image: 'x.svg'
   },
   {
     name: 'zenn',
-    href: 'https://zenn.dev/hi_ka_ru',
+    href: 'https://zenn.dev/hi_ka_ru/',
     image: 'zenn.svg'
   },
   {
