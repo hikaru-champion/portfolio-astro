@@ -37,7 +37,7 @@ export const techSkills: TechSkillItem[] = [
     description: 'プロジェクトの払い出しから技術サポートまで対応。コスト最適化やガイドライン、各種サービスのデザインパターンの作成。'
   },
   {
-    name: 'Cloud Flare',
+    name: 'Cloudflare',
     image: 'cloudflare.png',
     type: 'cloud',
     description: '個人サイトのホスティングや、ドメイン管理で利用。最近利用し始めたのでまだまだ勉強中。'
