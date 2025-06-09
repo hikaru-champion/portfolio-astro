@@ -10,7 +10,7 @@ export const profileList: ProfileItem[] = [
   },
   {
     category: '年齢',
-    item: '29歳'
+    item: '30歳'
   },
   {
     category: '住まい',
