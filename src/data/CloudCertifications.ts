@@ -55,6 +55,12 @@ export const cloudCertificates: CloudCertificateItem[] = [
     activeDate: '2024/9 ~ 2026/9'
   },
   {
+    name: 'Google Cloud Certified - Professional Cloud Data Engineer',
+    image: 'professional-cloud-data-engineer.png',
+    cloud: 'Google Cloud',
+    activeDate: '2025/2 ~ 2027/2'
+  },
+  {
     name: 'AWS Certified Cloud Practitioner',
     image: 'aws-certified-cloud-practitioner.png',
     cloud: 'AWS',
